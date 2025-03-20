@@ -1,0 +1,12 @@
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/lajolla_lib.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/lajolla.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/test_filter.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/test_frame.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/test_image.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/test_intersection.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/test_materials.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/test_matrix.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/test_mipmap.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/test.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/edit_cache.dir
+/Users/vedant_j/Desktop/image_synthesis/lajolla_public/build/CMakeFiles/rebuild_cache.dir
