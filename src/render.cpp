@@ -366,7 +366,7 @@ Image3 gradient_path_render(const Scene &scene) {
             fcy(x,y).x = fabs(cy[i].x); fcy(x,y).y = fabs(cy[i].y); fcy(x,y).z = fabs(cy[i].z);
         }
 
-    return fcy;
+    return fout;
 }
 
 
