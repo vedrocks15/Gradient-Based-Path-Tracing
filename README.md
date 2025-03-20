@@ -1,6 +1,28 @@
 # lajolla
 UCSD CSE 272 renderer
 
+The primary goal of our project is to enhance the LaJolla renderer by integrating Gradient-Domain
+Path Tracing [1] algorithm into its regular path tracing implementation. This integration will build
+upon the existing Monte Carlo sampling-based path tracing by incorporating gradient-domain sam-
+pling, shift mapping and poisson reconstruction. By combining gradient information with tradition-
+ally sampled pixels, gradient-domain sampling preserves the low-frequency details of conventional
+images while leveraging the lower variance in sampled gradients to reduce high-frequency noise.
+Additionally, we aim to replicate some of the authors’ analyses to compare renders produced by
+gradient-domain path tracing and traditional path tracing to validate the correctness of our imple-
+mentation.
+
+Main files where we made changes :
+
+1. src/render.cpp : Contains the poisson solver function \& our gradient\_path\_render function that performs GDPT.
+2. src/path\_tracing.h : Contains our implementation of simultaneous evaluation of base and 4 offset paths.
+3. src/intersection.h : Custom struct defined to hold each path contribution, probablities and multiple importance sampling weights.
+4. src/parsers/parse\_scene.cpp : Updated the scene parser to map "gradpath" option to Integrator::GradPath object.
+5. src/scene.h : Added GradPath to Integrator enum.
+6. Also added some renders in cbox\_gdpt, cbox\_path, custom\_gdpt\_final\_render.exr and gdpt\_renders.
+
+
+
+
 # Build
 All the dependencies are included. Use CMake to build.
 If you are on Unix systems, try
