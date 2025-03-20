@@ -14,7 +14,7 @@ gradient-domain path tracing and traditional path tracing to validate the correc
 Main files where we made changes :
 
 1. src/render.cpp : Contains the poisson solver function & our gradient_path_render function that performs GDPT.
-2. src/path_tracing.h : Contains our implementation of simulataneous evaluation of base and 4 offset paths.
+2. src/path_tracing.h : Contains our implementation of simultaneous evaluation of base and 4 offset paths.
 3. src/intersection.h : Custom struct defined to hold each path contribution, probablities and multiple importance sampling weights.
 4. src/parsers/parse_scene.cpp : Updated the scene parser to map "gradpath" option to Integrator::GradPath object.
 5. src/scene.h : Added GradPath to Integrator enum.
