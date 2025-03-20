@@ -9,3 +9,15 @@ gradient-domain sampling preserves the low-frequency details of conventional
 images while leveraging the lower variance in sampled gradients to reduce high-frequency noise.
 Additionally, we aim to replicate some of the authors’ analyses to compare renders produced by
 gradient-domain path tracing and traditional path tracing to validate the correctness of our implementation
+
+
+Main files where we made changes :
+
+1. src/render.cpp : Contains the poisson solver function & our gradient_path_render function that performs GDPT.
+2. src/path_tracing.h : Contains our implementation of simulataneous evaluation of base and 4 offset paths.
+3. src/intersection.h : Custom struct defined to hold each path contribution, probablities and multiple importance sampling weights.
+4. src/parsers/parse_scene.cpp : Updated the scene parser to map "gradpath" option to Integrator::GradPath object.
+5. src/scene.h : Added GradPath to Integrator enum.
+6. Also added some renders in cbox_gdpt, cbox_path, custom_gdpt_final_render.exr and gdpt_renders.
+
+
